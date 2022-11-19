@@ -32,7 +32,7 @@ const QuioscoProvider= ({children})=>{
 
 		const obtenerCategorias = async ()=>{
 
-			const respuesta = await fetch("http://localhost:3000/api/categorias");
+			const respuesta = await fetch("/api/categorias");
 
 			const resultado = await respuesta.json();
 
